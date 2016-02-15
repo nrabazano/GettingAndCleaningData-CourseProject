@@ -53,27 +53,95 @@ The script `run_analysis.R` performs the 5 steps described in the course project
 
 ##Description of the variables in the tiny_data.txt file
 General description of the file including:
- - Dimensions of the dataset
- - Summary of the data
- - Variables present in the dataset
 
-(you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
+### - Dimensions of the dataset: 
+180 observations of 81 columns
+### - Summary of the data
+### - Variables present in the dataset
+`subject `
+`activity `
+`tBodyAccMeanX `
+`tBodyAccMeanY `
+`tBodyAccMeanZ `
+`tBodyAccStdX `
+`tBodyAccStdY `
+`tBodyAccStdZ `
+`tGravityAccMeanX `
+`tGravityAccMeanY `
+`tGravityAccMeanZ `
+`tGravityAccStdX `
+`tGravityAccStdY `
+`tGravityAccStdZ `
+`tBodyAccJerkMeanX `
+`tBodyAccJerkMeanY `
+`tBodyAccJerkMeanZ `
+`tBodyAccJerkStdX `
+`tBodyAccJerkStdY `
+`tBodyAccJerkStdZ `
+`tBodyGyroMeanX `
+`tBodyGyroMeanY `
+`tBodyGyroMeanZ `
+`tBodyGyroStdX `
+`tBodyGyroStdY `
+`tBodyGyroStdZ `
+`tBodyGyroJerkMeanX `
+`tBodyGyroJerkMeanY `
+`tBodyGyroJerkMeanZ `
+`tBodyGyroJerkStdX `
+`tBodyGyroJerkStdY `
+`tBodyGyroJerkStdZ `
+`tBodyAccMagMean `
+`tBodyAccMagStd `
+`tGravityAccMagMean `
+`tGravityAccMagStd `
+`tBodyAccJerkMagMean `
+`tBodyAccJerkMagStd `
+`tBodyGyroMagMean `
+`tBodyGyroMagStd `
+`tBodyGyroJerkMagMean `
+`tBodyGyroJerkMagStd `
+`fBodyAccMeanX `
+`fBodyAccMeanY `
+`fBodyAccMeanZ `
+`fBodyAccStdX `
+`fBodyAccStdY `
+`fBodyAccStdZ `
+`fBodyAccMeanFreqX `
+`fBodyAccMeanFreqY `
+`fBodyAccMeanFreqZ `
+`fBodyAccJerkMeanX `
+`fBodyAccJerkMeanY `
+`fBodyAccJerkMeanZ `
+`fBodyAccJerkStdX `
+`fBodyAccJerkStdY `
+`fBodyAccJerkStdZ `
+`fBodyAccJerkMeanFreqX `
+`fBodyAccJerkMeanFreqY `
+`fBodyAccJerkMeanFreqZ `
+`fBodyGyroMeanX `
+`fBodyGyroMeanY `
+`fBodyGyroMeanZ `
+`fBodyGyroStdX `
+`fBodyGyroStdY `
+`fBodyGyroStdZ `
+`fBodyGyroMeanFreqX `
+`fBodyGyroMeanFreqY `
+`fBodyGyroMeanFreqZ `
+`fBodyAccMagMean `
+`fBodyAccMagStd `
+`fBodyAccMagMeanFreq `
+`fBodyBodyAccJerkMagMean `
+`fBodyBodyAccJerkMagStd `
+`fBodyBodyAccJerkMagMeanFreq `
+`fBodyBodyGyroMagMean `
+`fBodyBodyGyroMagStd `
+`fBodyBodyGyroMagMeanFreq `
+`fBodyBodyGyroJerkMagMean `
+`fBodyBodyGyroJerkMagStd `
+`fBodyBodyGyroJerkMagMeanFreq`
 
-###Variable 1 (repeat this section for all variables in the dataset)
-Short description of what the variable describes.
 
-Some information on the variable including:
- - Class of the variable
- - Unique values/levels of the variable
- - Unit of measurement (if no unit of measurement list this as well)
- - In case names follow some schema, describe how entries were constructed (for example time-body-gyroscope-z has 4 levels of 
- descriptors. Describe these 4 levels). 
 
-(you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
-
-####Notes on variable 1:
-If available, some additional notes on the variable not covered elsewehere. If no notes are present leave this section out.
-
-##Sources
+##Source
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.
 
