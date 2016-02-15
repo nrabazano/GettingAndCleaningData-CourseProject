@@ -55,92 +55,111 @@ The script `run_analysis.R` performs the 5 steps described in the course project
 General description of the file including:
 
 ### - Dimensions of the dataset: 
-180 observations of 81 columns
+* 180 observations of 81 columns.
+
 ### - Summary of the data
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ.
+* These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+* The body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ).
+* Features are normalized and bounded within [-1,1].
+* Mean: Mean value
+* Std: Standard deviation
+* Prefix 't' to denote time
+* The 'f' to indicate frequency domain signals
+
 ### - Variables present in the dataset
-`subject `
-`activity `
-`tBodyAccMeanX `
-`tBodyAccMeanY `
-`tBodyAccMeanZ `
-`tBodyAccStdX `
-`tBodyAccStdY `
-`tBodyAccStdZ `
-`tGravityAccMeanX `
-`tGravityAccMeanY `
-`tGravityAccMeanZ `
-`tGravityAccStdX `
-`tGravityAccStdY `
-`tGravityAccStdZ `
-`tBodyAccJerkMeanX `
-`tBodyAccJerkMeanY `
-`tBodyAccJerkMeanZ `
-`tBodyAccJerkStdX `
-`tBodyAccJerkStdY `
-`tBodyAccJerkStdZ `
-`tBodyGyroMeanX `
-`tBodyGyroMeanY `
-`tBodyGyroMeanZ `
-`tBodyGyroStdX `
-`tBodyGyroStdY `
-`tBodyGyroStdZ `
-`tBodyGyroJerkMeanX `
-`tBodyGyroJerkMeanY `
-`tBodyGyroJerkMeanZ `
-`tBodyGyroJerkStdX `
-`tBodyGyroJerkStdY `
-`tBodyGyroJerkStdZ `
-`tBodyAccMagMean `
-`tBodyAccMagStd `
-`tGravityAccMagMean `
-`tGravityAccMagStd `
-`tBodyAccJerkMagMean `
-`tBodyAccJerkMagStd `
-`tBodyGyroMagMean `
-`tBodyGyroMagStd `
-`tBodyGyroJerkMagMean `
-`tBodyGyroJerkMagStd `
-`fBodyAccMeanX `
-`fBodyAccMeanY `
-`fBodyAccMeanZ `
-`fBodyAccStdX `
-`fBodyAccStdY `
-`fBodyAccStdZ `
-`fBodyAccMeanFreqX `
-`fBodyAccMeanFreqY `
-`fBodyAccMeanFreqZ `
-`fBodyAccJerkMeanX `
-`fBodyAccJerkMeanY `
-`fBodyAccJerkMeanZ `
-`fBodyAccJerkStdX `
-`fBodyAccJerkStdY `
-`fBodyAccJerkStdZ `
-`fBodyAccJerkMeanFreqX `
-`fBodyAccJerkMeanFreqY `
-`fBodyAccJerkMeanFreqZ `
-`fBodyGyroMeanX `
-`fBodyGyroMeanY `
-`fBodyGyroMeanZ `
-`fBodyGyroStdX `
-`fBodyGyroStdY `
-`fBodyGyroStdZ `
-`fBodyGyroMeanFreqX `
-`fBodyGyroMeanFreqY `
-`fBodyGyroMeanFreqZ `
-`fBodyAccMagMean `
-`fBodyAccMagStd `
-`fBodyAccMagMeanFreq `
-`fBodyBodyAccJerkMagMean `
-`fBodyBodyAccJerkMagStd `
-`fBodyBodyAccJerkMagMeanFreq `
-`fBodyBodyGyroMagMean `
-`fBodyBodyGyroMagStd `
-`fBodyBodyGyroMagMeanFreq `
-`fBodyBodyGyroJerkMagMean `
-`fBodyBodyGyroJerkMagStd `
-`fBodyBodyGyroJerkMagMeanFreq`
 
+*`subject `
+*`activity `
+*`tBodyAccMeanX `
+*`tBodyAccMeanY `
+*`tBodyAccMeanZ `
+*`tBodyAccStdX `
+*`tBodyAccStdY `
+*`tBodyAccStdZ `
+*`tGravityAccMeanX `
+*`tGravityAccMeanY `
+*`tGravityAccMeanZ `
+*`tGravityAccStdX `
+*`tGravityAccStdY `
+*`tGravityAccStdZ `
+*`tBodyAccJerkMeanX `
+*`tBodyAccJerkMeanY `
+*`tBodyAccJerkMeanZ `
+*`tBodyAccJerkStdX `
+*`tBodyAccJerkStdY `
+*`tBodyAccJerkStdZ `
+*`tBodyGyroMeanX `
+*`tBodyGyroMeanY `
+*`tBodyGyroMeanZ `
+*`tBodyGyroStdX `
+*`tBodyGyroStdY `
+*`tBodyGyroStdZ `
+*`tBodyGyroJerkMeanX `
+*`tBodyGyroJerkMeanY `
+*`tBodyGyroJerkMeanZ `
+*`tBodyGyroJerkStdX `
+*`tBodyGyroJerkStdY `
+*`tBodyGyroJerkStdZ `
+*`tBodyAccMagMean `
+*`tBodyAccMagStd `
+*`tGravityAccMagMean `
+*`tGravityAccMagStd `
+*`tBodyAccJerkMagMean `
+*`tBodyAccJerkMagStd `
+*`tBodyGyroMagMean `
+*`tBodyGyroMagStd `
+*`tBodyGyroJerkMagMean `
+*`tBodyGyroJerkMagStd `
+*`fBodyAccMeanX `
+*`fBodyAccMeanY `
+*`fBodyAccMeanZ `
+*`fBodyAccStdX `
+*`fBodyAccStdY `
+*`fBodyAccStdZ `
+*`fBodyAccMeanFreqX `
+*`fBodyAccMeanFreqY `
+*`fBodyAccMeanFreqZ `
+*`fBodyAccJerkMeanX `
+*`fBodyAccJerkMeanY `
+*`fBodyAccJerkMeanZ `
+*`fBodyAccJerkStdX `
+*`fBodyAccJerkStdY `
+*`fBodyAccJerkStdZ `
+*`fBodyAccJerkMeanFreqX `
+*`fBodyAccJerkMeanFreqY `
+*`fBodyAccJerkMeanFreqZ `
+*`fBodyGyroMeanX `
+*`fBodyGyroMeanY `
+*`fBodyGyroMeanZ `
+*`fBodyGyroStdX `
+*`fBodyGyroStdY `
+*`fBodyGyroStdZ `
+*`fBodyGyroMeanFreqX `
+*`fBodyGyroMeanFreqY `
+*`fBodyGyroMeanFreqZ `
+*`fBodyAccMagMean `
+*`fBodyAccMagStd `
+*`fBodyAccMagMeanFreq `
+*`fBodyBodyAccJerkMagMean `
+*`fBodyBodyAccJerkMagStd `
+*`fBodyBodyAccJerkMagMeanFreq `
+*`fBodyBodyGyroMagMean `
+*`fBodyBodyGyroMagStd `
+*`fBodyBodyGyroMagMeanFreq `
+*`fBodyBodyGyroJerkMagMean `
+*`fBodyBodyGyroJerkMagStd `
+*`fBodyBodyGyroJerkMagMeanFreq`
 
+### Activity Labels
+
+* `WALKING` (value `1`): subject was walking during the test
+* `WALKING_UPSTAIRS` (value `2`): subject was walking up a staircase during the test
+* `WALKING_DOWNSTAIRS` (value `3`): subject was walking down a staircase during the test
+* `SITTING` (value `4`): subject was sitting during the test
+* `STANDING` (value `5`): subject was standing during the test
+* `LAYING` (value `6`): subject was laying down during the test
 
 ##Source
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.
