@@ -152,6 +152,9 @@ The features selected for this database come from the accelerometer and gyroscop
 *`fBodyBodyGyroJerkMagStd `
 *`fBodyBodyGyroJerkMagMeanFreq`
 
+### Subject Labels
+* Values: 1 to 30.
+
 ### Activity Labels
 
 * `WALKING` (value `1`): subject was walking during the test
