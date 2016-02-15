@@ -1,22 +1,20 @@
 ---
 title: "Codebook.md"
 author: "nrabazano"
-date: "2015-10-13"
+date: "2016-14-02"
 output:
   html_document:
     keep_md: yes
 ---
 
 ## Project Description
-Short description of the project
+The purpose of this project is to demonstrate the ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis.
 
-##Study design and data processing
 
 ###Collection of the raw data
-Description of how the data was collected.
+Data was collected from the accelerometers from the Samsung Galaxy S smartphone and was obtained from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.
 
-###Notes on the original (raw) data 
-Some additional notes (if avaialble, otherwise you can leave this section out).
+
 
 ##Creating the tidy datafile
 
@@ -51,8 +49,5 @@ Some information on the variable including:
 If available, some additional notes on the variable not covered elsewehere. If no notes are present leave this section out.
 
 ##Sources
-Sources you used if any, otherise leave out.
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.
 
-##Annex
-If you used any code in the codebook that had the echo=FALSE attribute post this here (make sure you set the results parameter 
-to 'hide' as you do not want the results to show again)
